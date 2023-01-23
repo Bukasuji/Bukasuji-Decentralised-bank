@@ -1,5 +1,5 @@
 .container {
-  background:linear-gradient(#ffffff15, rgba(255, 255, 255, 0.116)),  url(../public/bg2.jpeg);
+  background:linear-gradient(#ffffff15, rgba(255, 255, 255, 0.116)),  url(../public/bg1.jpeg);
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
