@@ -1,8 +1,11 @@
-## BukasujiBank
+# Bukasuji Decentralised Bank
 A decentralized bank application that allows users to deposit and withdraw funds, check their balance and update their profile.
 
 ## Smart Contract
-Here is github repository for the smartcontract [smart contract repo](https://github.com/Bukasuji/Bukasuji-Crypto-Bank)
+Here is github repository for the smartcontract (https://github.com/Bukasuji/Bukasuji-Crypto-Bank)
+
+## Projec live demo
+(https://bukasuji-decentralised-bank.bukasuji.repl.co/)
 
 ## Getting Started
 Prerequisites
