@@ -1,12 +1,10 @@
 .container {
-  background:linear-gradient(#ffffff15, rgba(255, 255, 255, 0.116)),  url(../public/bg1.jpeg);
-  min-height: 100vh;
+   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .main {
