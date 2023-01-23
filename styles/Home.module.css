@@ -1,0 +1,164 @@
+.container {
+  background:linear-gradient(#ffffff15, rgba(255, 255, 255, 0.116)),  url(../public/bg2.jpeg);
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(7, 218, 88);
+}
+.footer span {
+  color:white;
+}
+
+.title {
+  margin-top:0px ;
+  line-height: normal;
+  font-size: 4rem;
+  color: white;
+}
+.dbank {
+ color:rgb(7, 218, 88);
+}
+.description {
+  color: white;
+}
+.title{
+ text-align: center;
+}
+  
+.connectButton {
+  background-color:rgb(7, 218, 88) ;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.connectButton2{
+  background-color: rgb(29, 173, 199);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-left: 800px;
+}
+
+.connectStatus{
+  text-align: center;
+}
+
+.connectSign{
+  margin-top: 0px;
+  display: inline-block;
+  color:white;
+}
+
+.log {
+  position: relative;
+  width: 500px;
+  border-radius: 30px; 
+  background: #F6FBF9;
+  padding: 40px;
+  color: rgb(29, 173, 199);
+  background-color: rgba(0,0,0,.5);
+}
+
+.log input {
+  vertical-align: middle;
+  background-color: #FFFFFF;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  margin-top: 7px;
+}
+
+.log label {
+  color: rgb(7, 218, 88);
+}
+
+.log span{
+  font-size:13px;
+  color:rgb(29, 173, 199);
+  margin-bottom: 50px;
+}
+
+.depoWithdrawBtn {
+  margin-top:15px;
+}
+
+.depoWithdrawBtn button{
+ padding:10px 20px;
+ border-radius: 7px;
+ font-weight:bold;
+}
+
+.withdrawBtn{
+  margin-left:10px;
+  background-color: white;
+  color:rgb(7, 218, 88);
+  border:2px solid;
+}
+
+.depo{
+  background-color: rgb(7, 218, 88);
+  color:white;
+  border:none;
+}
+
+.balanceBtn{
+  text-align: center;
+}
+
+.balanceBtn button{
+  background-color:rgb(7,218, 88);
+  padding: 15px 48px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
