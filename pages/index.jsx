@@ -52,7 +52,6 @@ export default function Home() {
       setCurrentAccount(accounts[0]);
     } catch (error) {
       console.log(error);
-      alert("error connecting");
     }
   }
 
