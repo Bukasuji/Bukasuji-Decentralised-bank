@@ -5,7 +5,7 @@ A decentralized bank application that allows users to deposit and withdraw funds
 Here is github repository for the smartcontract (https://github.com/Bukasuji/Bukasuji-Crypto-Bank)
 
 ## Projec live demo
-(https://bukasuji-decentralised-bank.bukasuji.repl.co/)
+https://bukasuji-decentralised-bank.vercel.app/
 
 ## Getting Started
 Prerequisites
