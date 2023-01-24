@@ -17,7 +17,7 @@ Prerequisites
  
 ## Installation
 1. Clone the repository 
-```git clone https://github.com/[username]/BukasujiBank```
+```git clone https://github.com/Bukasuji/BukasujiBank```
 2. Install the dependencies
 ```npm install```
 3. Run the app
@@ -41,9 +41,9 @@ Next.js - A framework for building server-rendered React applications
 Ethers.js - A JavaScript library for interacting with the Ethereum blockchain
 
 ## Contributing
-We welcome contributions to the BukasujiBank project.
+I welcome contributions to the BukasujiBank project.
 
-Fork it (https://github.com/[Bukasuji]/BukasujiBank/fork)
+Fork it (https://github.com/Bukasuji/BukasujiBank/fork)
 Create your feature branch (git checkout -b feature/fooBar)
 Commit your changes (git commit -am 'Add some fooBar')
 Push to the branch (git push origin feature/fooBar)
