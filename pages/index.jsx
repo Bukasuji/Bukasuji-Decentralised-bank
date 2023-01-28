@@ -3,6 +3,8 @@ import { ethers } from "ethers";
 import Head from 'next/head'
 import React, { useEffect, useState } from "react";
 import styles from '../styles/Home.module.css'
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
   // Contract Address & ABI
@@ -31,9 +33,10 @@ export default function Home() {
       if (accounts.length > 0) {
         const account = accounts[0];
         console.log("wallet is connected! " + account);
+        toast.success("🦄 Wallet is Connected!");
       } else {
         console.log("make sure MetaMask is connected");
-        alert("make sure MetaMask is connected");
+        alert ("Make sure MetaMask is Connected");
       }
     } catch (error) {
       console.log("error: ", error);
@@ -45,6 +48,7 @@ export default function Home() {
       const { ethereum } = window;
       if (!ethereum) {
         console.log("please install MetaMask");
+        toast.warn("please install MetaMask");
       }
       const accounts = await ethereum.request({
         method: 'eth_requestAccounts'
@@ -52,6 +56,7 @@ export default function Home() {
       setCurrentAccount(accounts[0]);
     } catch (error) {
       console.log(error);
+      toast.error("Ops! Failed to connect with wallet.");
     }
   }
 
@@ -77,11 +82,12 @@ export default function Home() {
         );
       } catch (error) {
         console.error("Transaction error:", error);
-        alert(`Transaction error`);
+         toast.error("Transaction error");
       }
     }
     else {
       console.error("no web3 provider found, kindly install metamask")
+      toast.error("No web3 provider found, kindly install or connect metamask");
     }
 
   }
@@ -102,15 +108,16 @@ export default function Home() {
           console.log("Transaction successful");
         } else {
           console.error("Invalid amount or insufficient balance");
-          alert("Invalid amount or insufficient balance")
+           toast.error("Invalid amount or insufficient balance");
         }
       } catch (error) {
         console.error("Transaction error:", error);
-        alert("Transaction error");
+        toast.error("Transaction error");;
       }
     }
     else {
       console.error("no web3 provider found, kindly install metamask");
+      toast.error("No web3 provider found, kindly install or connect metamask");
     }
  };
 
@@ -131,11 +138,12 @@ export default function Home() {
         );
       } catch (error) {
         console.log(error);
-        alert("error, fetching your balance")
+        toast.error("Error, could not fetch your balance");
       }
     }
     else {
       console.log("Metamask is not connected");
+      toast.error("Metamask is not connected");
     }
   }
 
@@ -209,7 +217,19 @@ export default function Home() {
     
       <footer className={styles.footer}>
        <span>Created by: </span> <p> Chukwuebuka Osuji for Grandida LLC assessment project!</p>
-      </footer>    
+      </footer>  
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   )
 }
