@@ -7,11 +7,9 @@ import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
-  // Contract Address & ABI
+  //the contract address and its ABI
   const contractAddress = "0x36a950596d43678a3d0748ef4940e07a2bd4be23";
   const contractABI = abi.abi;
-
-  // Component state
   const [currentAccount, setCurrentAccount] = useState("");
   const [amount, setAmount] = useState("0.01");
   const [responseMsg, setResponseMsg] = useState();
@@ -24,7 +22,7 @@ export default function Home() {
   };
 
   
-  // Wallet connection logic
+  //Connect wallet
   const isWalletConnected = async () => {
     try {
       const { ethereum } = window;
